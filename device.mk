@@ -125,7 +125,7 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-service.multihal
 
 # Shipping API
-PRODUCT_SHIPPING_API_LEVEL := 29
+PRODUCT_SHIPPING_API_LEVEL := 33
 
 # Target VNDK
 PRODUCT_TARGET_VNDK_VERSION := 30
