@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-$(call inherit-product, device/xiaomi/juice/device.mk)
+$(call inherit-product, device/xiaomi/lemon/device.mk)
 
 # Inherit some common Dot stuff.
 $(call inherit-product, vendor/dot/config/common.mk)
@@ -14,8 +14,8 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_INCLUDE_PIXEL_CHARGER := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := dot_juice
-PRODUCT_DEVICE := juice
+PRODUCT_NAME := dot_lemon
+PRODUCT_DEVICE := lemon
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := sm6115
 PRODUCT_MANUFACTURER := Xiaomi
