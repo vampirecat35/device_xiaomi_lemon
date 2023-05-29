@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/juice
+DEVICE_PATH := device/xiaomi/lemon
 
 # Broken R
 BUILD_BROKEN_DUP_RULES := true
@@ -33,9 +33,7 @@ BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := lime,citrus,lemon,pomelo,juice
-
-# Audio
+TARGET_OTA_ASSERT_DEVICE := lemon
 AUDIO_FEATURE_ENABLED_HDMI_SPK := true
 
 # Bluetooth
@@ -91,9 +89,9 @@ BOARD_KERNEL_OFFSET := 0x00008000
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 BOARD_KERNEL_SEPARATED_DTBO := false
 TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_HEADERS := kernel/xiaomi/citrus
-TARGET_KERNEL_SOURCE := kernel/xiaomi/citrus
-TARGET_KERNEL_CONFIG := vendor/citrus-perf_defconfig
+TARGET_KERNEL_HEADERS := kernel/poco/citrus
+TARGET_KERNEL_SOURCE := kernel/poco/citrus
+TARGET_KERNEL_CONFIG := vendor/lime-perf_defconfig
 
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
@@ -187,4 +185,4 @@ BOARD_AVB_RECOVERY_ROLLBACK_INDEX := 1
 BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 
 # Inherit from the proprietary version
--include vendor/xiaomi/juice/BoardConfigVendor.mk
+-include vendor/xiaomi/lemon/BoardConfigVendor.mk
