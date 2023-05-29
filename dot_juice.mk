@@ -6,6 +6,9 @@
 
 $(call inherit-product, device/xiaomi/lemon/device.mk)
 
+# Enable Google Apps.
+WITH_GAPPS := true
+
 # Inherit some common Dot stuff.
 $(call inherit-product, vendor/dot/config/common.mk)
 TARGET_GAPPS_ARCH := arm64
