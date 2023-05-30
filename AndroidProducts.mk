@@ -8,6 +8,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/dot_juice.mk
 
 COMMON_LUNCH_CHOICES := \
-    dot_juice-user \
-    dot_juice-userdebug \
-    dot_juice-eng
+    dot_lemon-user \
+    dot_lemon-userdebug \
+    dot_lemon-eng
