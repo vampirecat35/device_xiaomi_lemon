@@ -16,5 +16,5 @@ Front Camera | 8 MP, f/2.1, 27mm (wide), 1/4.0", 1.12µm
 Release Date | January 08 2021
 
 ## Device Picture
-![Xiaomi Redmi 9T]([https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-9-power-0.jpg]) "Xiaomi Redmi 9T")
+![Xiaomi Redmi 9T]([https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-9-power-0.jpg] "Xiaomi Redmi 9T")
 
