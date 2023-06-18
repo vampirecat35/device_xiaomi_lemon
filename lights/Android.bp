@@ -36,8 +36,6 @@ prebuilt_etc {
     // ANDROIDMK TRANSLATION ERROR: LOCAL_MODULE_PATH value should start with $(<some-varaible>)/ or $(PRODUCT_OUT)/$(TARGET_COPY_VENDOR)/
     // LOCAL_MODULE_PATH := $(TARGET_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/init
 
-    stem: "android.hardware.light@2.0-service.rc",
-
     src: "android.hardware.light@2.0-service.xiaomi_juice.rc",
 
 }
