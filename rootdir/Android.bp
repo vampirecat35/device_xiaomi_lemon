@@ -4,8 +4,6 @@ prebuilt_etc {
     name: "init.mi_thermald.rc",
 
     src: "etc/init.mi_thermald.rc",
-    filename: "ERROR: Cannot handle $(TARGET_ROOT_OUT) for the prebuilt_etc",
-
 }
 
 prebuilt_etc {
