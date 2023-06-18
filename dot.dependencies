@@ -4,8 +4,8 @@
     "target_path": "vendor/xiaomi/lemon"
   },
   {
-    "repository" : "aseelps/kernel_poco_citrus",
-    "target_path": "kernel/poco/citrus",
+    "repository" : "vampirecat35/kernel_xiaomi_lemon",
+    "target_path": "kernel/xiaomi/lemon",
     "branch":"main",
     "remote":"github"
   }
