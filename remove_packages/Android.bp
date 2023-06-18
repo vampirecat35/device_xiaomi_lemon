@@ -2,7 +2,6 @@
 
 android_app_import {
     name: "RemovePackages",
-    installable: false,
 
     overrides: [
         "AmbientSensePrebuilt",
