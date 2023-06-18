@@ -8,7 +8,6 @@ cc_binary {
     // LOCAL_MODULE_PATH := $(TARGET_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/bin
 
     relative_install_path: "hw",
-    stem: "android.hardware.light@2.0-service",
 
     srcs: [
         "service.cpp",
