@@ -20,9 +20,7 @@ $(call inherit-product-if-exists, vendor/xiaomi/lemon/juice-vendor.mk)
 
 # Soong Namespace
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH) \
-    vendor/qcom/opensource/commonsys/packages/apps/Bluetooth \
-    vendor/qcom/opensource/commonsys/system/bt/conf
+    $(LOCAL_PATH)
 
 # Dot Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -128,7 +126,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_SHIPPING_API_LEVEL := 33
 
 # Target VNDK
-PRODUCT_TARGET_VNDK_VERSION := 32
+PRODUCT_TARGET_VNDK_VERSION := 34
+BOARD_VNDK_VERSION=current
 
 # Telephony
 PRODUCT_PACKAGES += \

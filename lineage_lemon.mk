@@ -21,7 +21,7 @@ $(call inherit-product, device/xiaomi/lemon/device.mk)
 WITH_GAPPS := true
 
 # Inherit device configuration.
-$(call inherit-product, vendor/dot/config/common.mk)
+$(call inherit-product, vendor/lineage/config/common.mk)
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
