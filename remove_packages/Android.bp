@@ -1,0 +1,25 @@
+
+
+android_app_import {
+    name: "RemovePackages",
+    installable: false,
+
+    overrides: [
+        "AmbientSensePrebuilt",
+        "CarrierSetup",
+        "MyVerizonServices",
+        "OBDM_Permissions",
+        "OPScreenRecord",
+        "SprintDM",
+        "SprintHM",
+        "YouTube",
+        "YouTubeMusicPrebuilt",
+        "VzwOmaTrigger",
+        "Music",
+        "RecorderPrebuilt",
+        "SafetyHubPrebuilt",
+    ],
+
+    apk: "/dev/null",
+    presigned: true,
+}
