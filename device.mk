@@ -26,7 +26,9 @@ $(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
 
 # Soong Namespace
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    vendor/qcom/opensource/commonsys/packages/apps/Bluetooth \
+    vendor/qcom/opensource/commonsys/system/bt/conf
 
 # Dot Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -132,7 +134,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_SHIPPING_API_LEVEL := 33
 
 # Target VNDK
-PRODUCT_TARGET_VNDK_VERSION := 34
+PRODUCT_TARGET_VNDK_VERSION := 32
 BOARD_VNDK_VERSION=current
 
 # Telephony

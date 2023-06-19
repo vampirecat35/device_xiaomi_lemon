@@ -1,0 +1,50 @@
+
+
+// HAL module implemenation stored in
+// hw/<POWERS_HARDWARE_MODULE_ID>.<ro.hardware>.so
+cc_binary {
+    name: "android.hardware.power-service.juice",
+
+    // ANDROIDMK TRANSLATION ERROR: LOCAL_MODULE_PATH value should start with $(<some-varaible>)/ or $(PRODUCT_OUT)/$(TARGET_COPY_VENDOR)/
+    // LOCAL_MODULE_PATH := $(TARGET_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/bin
+
+    relative_install_path: "hw",
+
+    required: ["android.hardware.power-service.rc"],
+    shared_libs: [ // android.hardware.power-ndk_platform
+        "liblog",
+
+        // ANDROIDMK TRANSLATION ERROR: unsupported conditional
+        "libcutils",
+        // ifeq ($(TARGET_USES_INTERACTION_BOOST),true)
+        "libdl",
+
+        // ANDROIDMK TRANSLATION ERROR: endif from unsupported conditional
+        "libxml2",
+        // endif
+        "libbase",
+        "libhidlbase",
+
+        "libbinder_ndk",
+        "libutils",
+    ],
+    header_libs: ["libutils_headers"] + ["libhardware_headers"],
+    srcs: [
+        "power-common.c",
+        "metadata-parser.c",
+        "utils.c",
+        "list.c",
+        "hint-data.c",
+        "powerhintparser.c",
+        "main.cpp",
+        "Power.cpp",
+        "power-bengal.c",
+    ],
+    include_dirs: [
+        "external/libxml2/include",
+//      "external/icu/icu4c/source/common",
+    ],
+
+    cflags: ["-DINTERACTION_BOOST"],
+
+}
