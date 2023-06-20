@@ -51,9 +51,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
     android.hardware.audio.effect@6.0-impl \
-    android.hardware.audio.service \
-    vendor.qti.hardware.audiohalext@1.0 \
-    vendor.qti.hardware.audiohalext-utils
+    android.hardware.audio.service
+
+$(call inherit-product-if-exists, vendor/qcom/common/av/av-vendor.mk)
 
 PRODUCT_PACKAGES += \
     audio.a2dp.default
@@ -68,10 +68,10 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    libdisplayconfig \
-    libqdMetaData \
+    libdisplayconfig.system.qti \
     libqdMetaData.system \
-    libvulkan
+    libvulkan \
+    libqdMetaData
 
 # Fastbootd
 PRODUCT_PACKAGES += \
@@ -112,7 +112,8 @@ PRODUCT_PACKAGES += \
     android.hardware.power-service.juice \
     vendor.qti.hardware.perf@2.0 \
     vendor.qti.hardware.perf@2.1 \
-    vendor.qti.hardware.perf@2.2
+    vendor.qti.hardware.perf@2.2 \
+    vendor.qti.hardware.perf@2.3
 
 # Prebuilds
 PRODUCT_PACKAGES += \
