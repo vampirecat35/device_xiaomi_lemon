@@ -28,7 +28,10 @@ $(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     vendor/qcom/opensource/commonsys/packages/apps/Bluetooth \
-    vendor/qcom/opensource/commonsys/system/bt/conf
+    vendor/qcom/opensource/commonsys/system/bt/conf \
+    vendor/qcom/opensource/commonsys/display/services/config/src \
+    vendor/qcom/opensource/display/libqdmetadata \
+    vendor/qcom/opensource/commonsys/display/libqdmetadata
 
 # Dot Overlays
 DEVICE_PACKAGE_OVERLAYS += \
