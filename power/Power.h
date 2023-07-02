@@ -30,7 +30,8 @@
 #ifndef ANDROID_HARDWARE_POWER_POWER_H
 #define ANDROID_HARDWARE_POWER_POWER_H
 
-#include <aidl/android/hardware/power/BnPower.h>
+#include "../../../hardware/libhardware/include/hardware/power.h"
+//#include <aidl/android/hardware/power/BnPower.h>
 #include "power-common.h"
 
 namespace aidl {

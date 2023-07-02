@@ -71,10 +71,10 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    libdisplayconfig.system.qti \
+    libqdmetadata \
     libqdMetaData.system \
-    libvulkan \
-    libqdMetaData
+    libdisplayconfig.qti \
+    libvulkan
 
 # Fastbootd
 PRODUCT_PACKAGES += \
