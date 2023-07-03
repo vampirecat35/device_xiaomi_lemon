@@ -13,6 +13,7 @@ cc_binary {
     required: ["android.hardware.power-service.rc"],
     shared_libs: [ // android.hardware.power-ndk_platform
         "liblog",
+	"android.hardware.power-V3-ndk",
 
         // ANDROIDMK TRANSLATION ERROR: unsupported conditional
         "libcutils",
